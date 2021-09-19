@@ -1,4 +1,5 @@
-import type { NextPage } from 'next';
+import type {NextPage} from 'next';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   return (
@@ -41,13 +42,19 @@ const Home: NextPage = () => {
           </p>
           <div className='flex flex-row mt-6'>
             <div className='mr-3 bg-gray shadow-out hover:shadow-in hover:text-blue rounded-lg p-3 px-5'>
-            <a href="https://www.instagram.com/dimasaf._/" target="_blank" rel="noreferrer"><i className="fab fa-instagram" /></a>
+              <a href='https://www.instagram.com/dimasaf._/' target='_blank' rel='noreferrer'>
+                <i className='fab fa-instagram' />
+              </a>
             </div>
             <div className='mx-3 bg-gray shadow-out hover:shadow-in hover:text-blue rounded-lg p-3 px-5'>
-            <a href="https://www.linkedin.com/in/dimasaf21/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in" /></a>
+              <a href='https://www.linkedin.com/in/dimasaf21/' target='_blank' rel='noreferrer'>
+                <i className='fab fa-linkedin-in' />
+              </a>
             </div>
             <div className='mx-3 bg-gray shadow-out hover:shadow-in hover:text-blue rounded-lg p-3 px-5'>
-            <a href="https://github.com/dimasaf" target="_blank" rel="noreferrer"><i className="fab fa-github" /></a>
+              <a href='https://github.com/dimasaf' target='_blank' rel='noreferrer'>
+                <i className='fab fa-github' />
+              </a>
             </div>
           </div>
         </div>
@@ -55,88 +62,107 @@ const Home: NextPage = () => {
           <div className='rounded-full bg-gradient-to-b from-blue to-blue-dark w-52 h-52 left-64 top-0 absolute '></div>
           <div className='rounded-full bg-gradient-to-b from-blue to-blue-dark w-28 h-28 right-10 bottom-6 absolute z-50'></div>
           <div className='rounded-full bg-gradient-to-b from-blue to-blue-dark h-5/6 w-5/6 absolute top-8  right-1 shadow-out'></div>
-          <img src='./img/Saly.svg' alt='' className='w-full z-40' />
+          <Image src='/img/Saly.svg' alt='' className='w-full z-40' width={2160} height={2160} />
         </div>
       </header>
 
       {/* about */}
-      <section id='about' className="px-5">
+      <section id='about' className='px-5'>
         <h1 className='text-center text-5xl tracking-wider py-8'>.about</h1>
-        <h2 className='text-blue mb-4 text-2xl'>$&#123;<span className='text-gray-dark'>Education</span>&#125;</h2>
-        <div className='flex flex-col shadow-out hover:shadow-in rounded-lg p-8 px-6 mb-10'>
-          <h3 className='text-lg text-blue-dark font-semibold'>Computer Enginering</h3>
-          <h4>State Polytechnic of Jember</h4>
-          <h4>Agu 2018 - 2021</h4>
+        <div>
+          <h2 className='text-blue mb-4 text-2xl'>
+            $&#123;<span className='text-gray-dark'>Education</span>&#125;
+          </h2>
+          <div className='flex flex-col shadow-out hover:shadow-in rounded-lg p-8 px-6 mb-10'>
+            <h3 className='text-lg text-blue-dark font-semibold'>Computer Enginering</h3>
+            <h4>State Polytechnic of Jember</h4>
+            <h4>Agu 2018 - 2021</h4>
+          </div>
         </div>
-        <h2 className='text-blue mb-4 text-2xl'>$&#123;<span className='text-gray-dark'>Experience</span>&#125;</h2>
-        <div className='flex flex-col shadow-out hover:shadow-in rounded-lg p-8 px-6 mb-10'>
-          <h3 className='text-lg text-blue-dark font-semibold'>Computer Enginering</h3>
-          <h4>State Polytechnic of Jember</h4>
-          <h4>Agu 2018 - 2021</h4>
+        <div>
+          <h2 className='text-blue mb-4 text-2xl'>
+            $&#123;<span className='text-gray-dark'>Experience</span>&#125;
+          </h2>
+          <div className='flex flex-col shadow-out hover:shadow-in rounded-lg p-8 px-6 mb-10'>
+            <h3 className='text-lg text-blue-dark font-semibold'>Computer Enginering</h3>
+            <h4>State Polytechnic of Jember</h4>
+            <h4>Agu 2018 - 2021</h4>
+          </div>
         </div>
-        <h2 className='text-blue mb-4 text-2xl'>$&#123;<span className='text-gray-dark'>Skills</span>&#125;</h2>
-        <div className="flex flex-row flex-wrap lg:justify-start mb-10">
-          <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
-            HTML
-          </div>
-          <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
-            CSS
-          </div>
-          <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
-            SCSS
-          </div>
-          <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
-            Bootstrap
-          </div>
-          <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
-            Tailwind
-          </div>
-          <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
-            Javascript
-          </div>
-          <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
-            Python
-          </div>
-          <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
-            React
-          </div>
-          <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
-            Next
-          </div>
-          <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
-            Node js
+        <div>
+          <h2 className='text-blue mb-4 text-2xl'>
+            $&#123;<span className='text-gray-dark'>Skills</span>&#125;
+          </h2>
+          <div className='flex flex-row flex-wrap lg:justify-start mb-10'>
+            <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>HTML</div>
+            <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>CSS</div>
+            <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>SCSS</div>
+            <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
+              Bootstrap
+            </div>
+            <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
+              Tailwind
+            </div>
+            <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>
+              Javascript
+            </div>
+            <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>Python</div>
+            <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>React</div>
+            <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>Next</div>
+            <div className='shadow-out hover:shadow-in rounded-lg p-3 px-5 mr-4  mb-5'>Node js</div>
           </div>
         </div>
       </section>
 
-      <section id='projects' className="px-5">
-        <h1 className='text-center text-5xl tracking-wider py-8'>.project</h1>
+      <section id='projects' className='px-5'>
+        <h1 className='text-center text-5xl tracking-wider pt-8 pb-12'>.project</h1>
         <div className='flex flex-row flex-wrap justify-center md:justify-between mb-10 mx-2'>
           <div className='shadow-out hover:shadow-in rounded-lg p-2 mb-5'>
-            <img src='./img/tes.jpg' alt='' className='w-60 rounded-md' />
-          <h3 className='text-lg py-3  text-blue-dark font-semibold'>Computer Enginering</h3>
+            <Image
+              src='/img/tes.jpg'
+              alt=''
+              className='w-60 rounded-md'
+              layout='responsive'
+              height={220}
+              width={340}
+            />
+            <h3 className='text-lg py-3  text-blue-dark font-semibold'>Computer Enginering</h3>
             <h4>State Polytechnic of Jember</h4>
             <h4>Agu 2018 - 2021</h4>
           </div>
           <div className='shadow-out hover:shadow-in rounded-lg p-2 mb-5'>
-            <img src='./img/tes.jpg' alt='' className='w-60 rounded-md' />
-          <h3 className='text-lg py-3  text-blue-dark font-semibold'>Computer Enginering</h3>
+            <Image
+              src='/img/tes.jpg'
+              alt=''
+              className='w-60 rounded-md'
+              layout='responsive'
+              height={220}
+              width={340}
+            />
+            <h3 className='text-lg py-3  text-blue-dark font-semibold'>Computer Enginering</h3>
             <h4>State Polytechnic of Jember</h4>
             <h4>Agu 2018 - 2021</h4>
           </div>
           <div className='shadow-out hover:shadow-in rounded-lg p-2 mb-5'>
-            <img src='./img/tes.jpg' alt='' className='w-60 rounded-md' />
-          <h3 className='text-lg py-3  text-blue-dark font-semibold'>Computer Enginering</h3>
+            <Image
+              src='/img/tes.jpg'
+              alt=''
+              className='w-60 rounded-md'
+              layout='responsive'
+              height={220}
+              width={340}
+            />
+            <h3 className='text-lg py-3  text-blue-dark font-semibold'>Computer Enginering</h3>
             <h4>State Polytechnic of Jember</h4>
             <h4>Agu 2018 - 2021</h4>
           </div>
         </div>
       </section>
 
-      <section id='contact'>
+      <section id='contact' className='px-5'>
         <h1 className='text-center text-5xl tracking-wider py-8'>.contact</h1>
         <div className='grid justify-items-center'>
-          <p className='mb-4'>Have a question or want to work together?</p>
+          <p className='mb-8 text-center'>Have a question or want to work together?</p>
           <input
             type='text'
             className='bg-gray mb-6 py-4 px-4 w-5/6 sm:w-3/6 shadow-out focus:shadow-in focus:outline-none rounded-md'
